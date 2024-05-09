@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <div class="barra-navegacion">
+            <div id="log" class="log" onclick="redirigir()">
+                <a href="#" class="logo"><img src="./assets/img/logo-solution-tech.png" alt="Logo"></a>
+                <p>Security Tech</p>
+            </div>
+            <button class="menu-toggle">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Acerca de nosotros</a></li>
+                    <li><a href="#amenazas">Recomendaciones</a></li>
+                    <li><a href="#consejos">Prevención</a></li>
+                    <li><a href="#contacto">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="drop-down-menu">
+            <li><a href="#inicio">Acerca de nosotros</a></li>
+            <li><a href="#amenazas">Recomendaciones</a></li>
+            <li><a href="#consejos">Prevención</a></li>
+            <li><a href="#contacto">Contactanos</a></li>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <main class="content">
+                <h1 id="title">Security Tech</h1>
+                <p id="description" class="description">Si deseas asesoria referente a amenazas ciberneticas, soporte tecnico o ciberseguridad</p>
+                <p class="description">¡contactanos!</p>
+                <form id="survey-form">
+                    <div class="form-group name">
+                        <label for="name" id="name-label">Nombre</label>
+                        <input id="name" type="text" name="nombre" placeholder="Ingrese nombre" required>
+                    </div>
+                    <div class="form-group last-name">
+                        <label for="last-name" id="last-name-label">Apellido</label>
+                        <input id="last-name" type="text" name="last-name" placeholder="Ingrese apellido" required>
+                    </div>
+                    <div class="form-group email">
+                        <label for="email" id="email-label">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Ingrese correo electronico" required>
+                    </div>
+                    <div class="form-group phone">
+                        <label for="phone" id="number-label">Telefono</label>
+                        <input id="number" type="number" name="number" placeholder="Ingrese numero de telefono" min="1"
+                            max="9999999999" required>
+                    </div>
+                    <div class="form-group type-contact">
+                        <label for="dropdown">Seleccione el medio por el cual desea ser contactado</label>
+                        <select id="dropdown" name="opcion" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="email">Correo electronico</option>
+                            <option value="phone">Numero de telefono</option>
+                        </select>
+                    </div>
+                    <div class="form-group type-priority">
+                        <label>Seleccione la prioridad con la cual desea ser contactado</label>
+                        <p><input type="radio" name="priority" value="alta">Alta</p>
+                        <p><input type="radio" name="priority" value="media">Media</p>
+                        <p><input type="radio" name="priority" value="baja">Baja</p>
+                    </div>
+                    <div class="form-group your-case">
+                        <label>Comentanos tu caso</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribenos aquí tu caso..."></textarea>
+                    </div>
+                    <div class="form-group terms-conditions">
+                        <a href="">Terminos y condiciones</a>
+                        <p><input type="checkbox" id="opcion1" name="opcion[]" value="opcion">Acepto los terminos y condiciones</p>
+                        <p><input type="checkbox" id="opcion1" name="opcion[]" value="opcion">Acepto la politica de tratamiento de datos</p>
+                    </div>
+                    <input type="submit" id="submit" value="Enviar">
+                </form>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="group-1">
+            <div class="box box-1">
+                <figure class="figure-footer">
+                    <a href="#">
+                        <img class="log-footer" src="/assets/img/logo-solution-tech.png" alt="Logo de Security Tech">
+                    Security Tech</a>
+                </figure>
+            </div>
+            <div class="box box-2">
+                <h2>Expertos en ciberseguridad</h2>
+                <p>Permanece al dia en la prevencion de riesgos siguiendo nuestras redes.</p>
+                <a href="#"><img src="assets/img/log-instagram.png" alt="logo instagram"></a>
+                <a href="#"><img src="assets/img/log-youtube.png" alt="logo youtube"></a>
+                <a href="#"><img src="assets/img/log-linkedin.png" alt="logo linkedin"></a>
+                <a href="#"><img src="assets/img/log-twitter.png" alt="logo x"></a>
+            </div>
+            <div class="box box-3">
+                <p>Edwin D. Toledo</p>
+                <p>Camilo A. Sanches</p>
+                <small>&copy; 2024 <b>Security Tech</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
